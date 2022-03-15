@@ -1,0 +1,224 @@
+// Style général
+* {
+    box-sizing: border-box;
+}
+
+body {
+    border: 5px solid red;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    background: #040404;
+}
+
+
+/* style pr le header */
+
+#header {
+    border: 5px solid blue;
+    transition: ease-in-out 0.3s;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    * {
+        transition: ease-in-out 0.3s;
+    }
+    h1 {
+        text-transform: uppercase;
+        display: block;
+        position: relative;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 2.1rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        margin-right: 300px;
+        &:hover {
+            color: #fff;
+        }
+    }
+    // NAV
+    .nav-menu {
+        // margin-top: -450px;
+        margin-top: 10px;
+        margin-right: 70px;
+        width: 100%;
+        .bouton {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        ul {
+            display: flex;
+            margin-top: 40px;
+            padding: 0;
+            list-style: none;
+            margin: auto;
+            li {
+                margin-left: 15px;
+            }
+        }
+        a {
+            text-transform: uppercase;
+            display: block;
+            position: relative;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    // FIN NAV
+}
+
+
+/* fin header */
+
+// MAIN
+.container {
+    border: 5px solid green;
+    margin-top: 100px;
+    h2 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        text-align: center;
+        margin: 50px;
+        font-weight: 900;
+    }
+    .fa-facebook-f {
+        position: absolute;
+        right: 30px;
+        top: 30%;
+        font-size: 1.5rem;
+        color: #fff;
+        &:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    .fa-twitter {
+        position: absolute;
+        right: 30px;
+        top: 37%;
+        font-size: 1.5rem;
+        color: #fff;
+        &:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    .fa-instagram {
+        position: absolute;
+        right: 30px;
+        top: 44%;
+        font-size: 1.5rem;
+        color: #fff;
+        &:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    .fa-snapchat-ghost {
+        position: absolute;
+        right: 30px;
+        top: 51%;
+        font-size: 1.5rem;
+        color: #fff;
+        &:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    .fa-whatsapp {
+        position: absolute;
+        right: 30px;
+        top: 58%;
+        font-size: 1.5rem;
+        color: #fff;
+        &:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+    .section {
+        border: 5px solid rgb(255, 0, 191);
+        margin-top: 100px;
+        .rapha {
+            background: rgba(255, 255, 255, 0.08) !important;
+            border: 5px solid yellow;
+            p {
+                margin: 60px;
+            }
+        }
+        .connectées {
+            background-image: url(../../public/img/rapha.jpg) !important;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            border: 5px solid red;
+        }
+        img {
+            border: 5px solid rgb(255, 196, 0);
+        }
+        .retour {
+            background: rgba(255, 255, 255, 0.08);
+        }
+    }
+}
+
+// FOOTER
+footer {
+    margin-top: 150px;
+    background: rgba(255, 255, 255, 0.08);
+    height: 40vh;
+    .para1 {
+        border: 5px solid rebeccapurple;
+        padding: 40px;
+    }
+    span {
+        padding-top: 20px;
+        margin-right: 40px;
+        font-size: 1rem;
+    }
+    .copy {
+        font-size: 10px;
+    }
+}
+
+
+/* FIN FOOTER */
+
+// MEDIA QUERY
+// TABLETTE
+@media screen and (max-width: 990px) {
+    img {
+        height: 100vh !important;
+    }
+    .rapha {
+        p {
+            margin: 40px !important;
+        }
+    }
+    // FOOTER
+    footer {
+        span {
+            margin-right: 30px;
+            font-size: 13px;
+        }
+    }
+    /* FIN FOOTER */
+}
+
+
+/* FIN TABLETTE */
+
+// MOBILE
+@media screen and (max-width: 760px) {
+    // FOOTER
+    footer {
+        span {
+            margin-right: 15px;
+            font-size: 10px;
+        }
+    }
+    /* FIN FOOTER */
+}
+
+
+/* FIN MOBILE */
